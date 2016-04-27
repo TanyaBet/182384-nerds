@@ -1,13 +1,31 @@
 body {
+  font-family: Roboto Medium;
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  margin:0;
+  padding:0;
+}
+<!-- может лишнее
+ .text-under-h2,
+.we-work-hard  {
   font-size: 16px;
   line-height: 22px;
   color: #283136;
   font-family: Roboto Medium;
-}
-.header {
+} -->
+header {
   width: 1200px;
+  background-color: #eeeeee;
 }
-h2 {
+h1 {
+  font-size: 40px;
+  line-height: auto;
+  color: #000000;
+}
+h2,
+.lets-friend,
+.we-proud {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
@@ -19,19 +37,23 @@ h3 {
   color: #000000;
   font-family: Roboto Medium;
 }
+.text-under-h3 {
+  font-family: Roboto Medium;
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
 .index-logo {
   float: left;
   width:139px;
-  border: 1px solid black;
 }
 .top-menu {
     font-size: 14px;
     line-height: 30px;
     color: #000000;
-    float-left;
     width: 396px;
-    border: 1px solid black;
     clear: both;
+    margin: 23px;
 }
 .user-block {
 }
@@ -42,32 +64,89 @@ h3 {
  float: left;
  margin:s 46px;
 }
-header {
-  background-color: #eeeeee;
-}
 .slider {
   background-color: #eeeeee;
 }
 a {
   display:inline-block;
   vertical-align: middle;
+  text-decoration: none;
 }
-.glu {
+.glukhanko-cite {
   width: 198px;
   height: 37px;
-  margin-right: 121px
+  margin-right: 121px;
+  vertical-align: middle;
 }
-.aca {
+.academy-cite {
   width: 199px;
   height: 68px;
-  margin-right: 124px
+  margin-right: 124px;
+  vertical-align: middle;
 }
-.boro {
+.borodinsky-cite {
   width: 209px;
   height: 86px;
+  vertical-align: middle;
 }
 li {
   list-style-type: none;
+}
+.main-header {
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
+}
+.show, {
+  font-size: 12px;
+  line-height: 18px;
+  font-family: Roboto Bold;
+}
+p {
+  font-family: Roboto Medium;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+.sort {
+  color: #000000;
+  font-size: 12px;
+  line-height: 18px;
+}
+.grid,
+.choose-features {
+    font-family: Roboto Medium;
+    color: #283136;
+    font-size: 16px;
+    line-height: 20px;
+}
+.paginator {
+  height: 38px;
+  margin-bottom: 79px;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+}
+.first,
+.second,
+.third {
+  background: #f1f1f1;
+  height: 38px;
+  width: 38px;
+  border-color: #f1f1f1;
+  margin: 5px;
+  float: left;
+}
+
+.next {
+  font-size: 12px;
+  background: #f1f1f1;
+  width: 140px;
+  min-height: 38px;
+  margin: 5px;
+  color: #000000;
+  float-right: 10px;
 }
 .map-app {
   width: 1200px;
