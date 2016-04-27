@@ -4,6 +4,9 @@ body {
   color: #283136;
   font-family: Roboto Medium;
 }
+.header {
+  width: 1200px;
+}
 h2 {
   font-size: 36px;
   line-height: 36px;
@@ -16,14 +19,58 @@ h3 {
   color: #000000;
   font-family: Roboto Medium;
 }
-top-menu {
+.index-logo {
+  float: left;
+  width:139px;
+  border: 1px solid black;
+}
+.top-menu {
     font-size: 14px;
     line-height: 30px;
     color: #000000;
+    float-left;
+    width: 396px;
+    border: 1px solid black;
+    clear: both;
+}
+.user-block {
+}
+.top-menu-link1,
+.top-menu-link2,
+.top-menu-link3,
+.top-menu-link4 {
+ float: left;
+ margin:s 46px;
 }
 header {
   background-color: #eeeeee;
 }
 .slider {
   background-color: #eeeeee;
+}
+a {
+  display:inline-block;
+  vertical-align: middle;
+}
+.glu {
+  width: 198px;
+  height: 37px;
+  margin-right: 121px
+}
+.aca {
+  width: 199px;
+  height: 68px;
+  margin-right: 124px
+}
+.boro {
+  width: 209px;
+  height: 86px;
+}
+li {
+  list-style-type: none;
+}
+.map-app {
+  width: 1200px;
+  height: 420px;
+  border: 1px solid gray;
 }
