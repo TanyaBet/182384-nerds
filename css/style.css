@@ -6,45 +6,51 @@ body {
   margin:0;
   padding:0;
 }
-<!-- может лишнее
- .text-under-h2,
-.we-work-hard  {
-  font-size: 16px;
-  line-height: 22px;
-  color: #283136;
-  font-family: Roboto Medium;
-} -->
 header {
-  width: 1200px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #000000;
   background-color: #eeeeee;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 h1 {
-  font-size: 40px;
-  line-height: auto;
-  color: #000000;
+    font-size: 40px;
+    line-height: auto;
+    color: #000000;
+    text-transform: uppercase;
 }
 h2,
-.lets-friend,
-.we-proud {
+.text-bottom,
+.about-us-title {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
   font-family: Roboto Medium;
+}
+.year {
+  font-family: Roboto Medium;
+  font-sise: 16px;
+  line-height: 8,56;
+  color: #000000;
+  text-transform: uppercase;
 }
 h3 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   font-family: Roboto Medium;
+  text-transform: uppercase;
 }
-.text-under-h3 {
+.service-text {
   font-family: Roboto Medium;
   font-size: 15px;
   line-height: 22px;
   color: #283136;
 }
 .index-logo {
-  float: left;
   width:139px;
 }
 .top-menu {
@@ -54,18 +60,14 @@ h3 {
     width: 396px;
     clear: both;
     margin: 23px;
+    background-color: #eeeeee;
+    text-transform: uppercase;
 }
-.user-block {
-}
-.top-menu-link1,
-.top-menu-link2,
-.top-menu-link3,
-.top-menu-link4 {
- float: left;
- margin:s 46px;
-}
+.text-top,
 .slider {
   background-color: #eeeeee;
+  margin:0;
+  padding:0;
 }
 a {
   display:inline-block;
@@ -92,33 +94,38 @@ a {
 li {
   list-style-type: none;
 }
-.main-header {
-  font-size: 14px;
-  line-height: 30px;
-  color: #000000;
+.slide-item-button,
+.button-order {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
 }
-.show, {
+.button-show, {
   font-size: 12px;
   line-height: 18px;
   font-family: Roboto Bold;
+  text-transform: uppercase;
 }
-p {
-  font-family: Roboto Medium;
-  font-size: 18px;
-  line-height: 30px;
-  color: #000000;
-}
+
 .sort {
   color: #000000;
   font-size: 12px;
   line-height: 18px;
+  text-transform: uppercase;
 }
-.grid,
-.choose-features {
+.regulation {
     font-family: Roboto Medium;
     color: #283136;
     font-size: 16px;
     line-height: 20px;
+}
+.features-head,
+.grid-head {
+  font-family: Roboto Medium;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
 }
 .paginator {
   height: 38px;
@@ -128,9 +135,7 @@ p {
   line-height: 18px;
   color: #000000;
 }
-.first,
-.second,
-.third {
+.pagination-item {
   background: #f1f1f1;
   height: 38px;
   width: 38px;
@@ -147,9 +152,23 @@ p {
   margin: 5px;
   color: #000000;
   float-right: 10px;
+  text-transform: uppercase;
 }
 .map-app {
   width: 1200px;
   height: 420px;
   border: 1px solid gray;
+}
+.filter-head {
+  text-transform: uppercase;
+}
+.window {
+  font-size: 18px;
+  line-height: 8,56px;
+  color: #000000;
+}
+.description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #283136;
 }

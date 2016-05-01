@@ -3,55 +3,61 @@
   <head>
      <meta charset="utf-8">
      <link href="css/style.css" type="text/css" rel="stylesheet">
-     <title>HTML Academy: Нёрдс</title>
+     <title>HTML Academy: Нердс</title>
   </head>
 <body>
  <header class="main-header">
     <div class="container">
         <div class="index-logo">
-           <a href="index.html"><img src="data:image/png;" href="index.html" width="" height="" alt="Нёрдс"></a>
+           <a href="index.html"><img src="img/index-logo.png" width="139" height="56" alt="Нёрдс"></a>
         </div>
       <nav class="main-navigation">
          <ul class="top-menu">
-            <li class="top-menu-link1"><a href="#">Студия</a></li>
-            <li class="top-menu-link1"><a href="#">Клиенты</a></li>
-            <li class="top-menu-link1"><a href="index.html">Магазин</a></li>
-            <li class="top-menu-link1"><a href="#">Контакты</a></li>
+            <li class="top-menu-link"><a href="#">Студия</a></li>
+            <li class="top-menu-link"><a href="#">Клиенты</a></li>
+            <li class="top-menu-link"><a href="index.html">Магазин</a></li>
+            <li class="top-menu-link"><a href="#">Контакты</a></li>
+            <li class="top-menu-link"><a href="#">Корзина</a></li>
          </ul>
       </nav>
-      <div class="user-block">
-        <img src="img/.icon-basket.png" width="15" height="15" alt="icon-basket">
-        <a class="cart" href="#">Корзина</a>
-      </div>
-    </div>
  </header>
-<main class="container"
-  <div class="welcome">
-   <h1>ДОБРО ПОЖАЛОВАТЬ В МАГАЗИН ГОТОВЫХ МАКЕТОВ<h2>
-  </div>
-  <div class="block-left"
-    <div class="cost">
-      <p>СТОИМОСТЬ:</p>
-      <!--фильтр-->
+ <div class="text-top">
+    <div class="container">
+      <h1>Добро пожаловать в магазин готовых макетов</h1>
     </div>
-    <div class="regulation">
-      <div class="grid">
-        <p>СЕТКА:</p>
-        </label>
-         <input type="radio" name="type" value="Адаптивная" checked>
-          Адаптивная
-        </label><br>
-        </label>
-         <input type="radio" name="type" value="Фиксированная">
-          Фиксированная
-        </label><br>
-        </label>
-         <input type="radio" name="type" value="Резиновая">
-          Резиновая
-        </label>
+ </div>
+<main>
+<div class="container">
+ <div class="catalog-content">
+    <aside class="block-left">
+     <form>
+      <fieldset>
+      <div class="filter">
+        <legend class="filter-head">Стоимость:</legend>
+      <!--фильтр-->
       </div>
+      </fieldset>
+      <div class="regulation">
+      <fieldset>
+        <div class="grid">
+                <legend class="grid-head">Сетка:</legend>
+           </label>
+            <input type="radio" name="type" value="Адаптивная" checked>
+             Адаптивная
+           </label><br>
+           </label>
+            <input type="radio" name="type" value="Фиксированная">
+             Фиксированная
+           </label><br>
+           </label>
+            <input type="radio" name="type" value="Резиновая">
+             Резиновая
+           </label>
+      </div>
+     </fieldset>
+     <fieldset>
       <div class="features">
-        <p>ОСОБЕННОСТИ:</p>
+            <legend class="features-head">Особенности:</legend>
         <ul class="choose-features">
           <li><input type="checkbox" name="attribute" checked>
               <label for="Слайдер">Слайдер</label></li>
@@ -64,19 +70,20 @@
           <li><input type="checkbox" name="attribute">
               <label for="Корзина">Корзина</label></li><br>
       </div>
-      <input class="show" type="submit" value="Показать">
-    </div>
-  </div>
-  <div class="block-content">
+      <input class="button-show" type="submit" value="Показать">
+    </fieldset>
+    </form>
+   </aside>
+  <div class="block-right">
    <div class="sort"
-       <p>СОРТИРОВАТЬ:</p>
+       <p>Сортировать:</p>
      <ul>
-       <li>ПО ЦЕНЕ</li>
-       <li>ПО ТИПУ</li>
-       <li>ПО ФУНКЦИОНАЛУ</li>
+       <li>По цене</li>
+       <li>По типу</li>
+       <li>По функционалу</li>
      </ul>
    </div>
-   <div class="model-1">
+   <div class="model model-aviator">
       <div class="img">
         <img src="img/Layer 34.png" weight="240" height="240" alt="aviator">
       </div>
@@ -84,15 +91,17 @@
         <!--всплывающее окно с названием-->
       </div>
    </div>
-   <div class="model-2">
+   <div class="model model-sunset">
       <div class="img">
         <img src="img/sqspc2-1.png" weight="240" height="240" alt="sunset">
       </div>
       <div class="window">
-      <!--всплывающее окно с названием-->
+      SUNSET
+      <p class="description">Интернет-магазин с личным кабинетом</p>
+      <a class="btn" href="#">10000 Р.</a>
       </div>
    </div>
-   <div class="model-3">
+   <div class="model model-forte">
      <div class="img">
        <img src="img/forte.png" weight="240" height="240" alt="forte">
      </div>
@@ -100,7 +109,7 @@
      <!--всплывающее окно с названием-->
      </div>
    </div>
-   <div class="mode-4">
+   <div class="model model-thai">
      <div class="img">
        <img src="img/thai.png" weight="240" height="240" alt="thai">
      </div>
@@ -108,7 +117,7 @@
      <!--всплывающее окно с названием-->
      </div>
    </div>
-   <div class="model-5">
+   <div class="model model-avenue">
      <img src="img/avenue.png" weight="240" height="240" alt="avenue">
      <div class="img">
      </div>
@@ -116,7 +125,7 @@
      <!--всплывающее окно с названием-->
      </div>
    </div>
-   <div class="model-6">
+   <div class="model model-dovetail">
      <img src="img/dovetail.png" weight="240" height="240" alt="dovetail">
      <div class="img">
      </div>
@@ -126,11 +135,13 @@
    </div>
   </div>
   <div class="paginator">
-              <a href="#" class="first" checked>1</a>
-              <a href="#" class="second">2</a>
-              <a href="#" class="third">3</a>
-              <a href="#" class="next">СЛЕДУЮЩАЯ</a>
+              <a href="#" class="pagination-item" checked>1</a>
+              <a href="#" class="pagination-item">2</a>
+              <a href="#" class="pagination-item">3</a>
+              <a href="#" class="next">Следующая</a>
+   </div>
   </div>
+ </div>
 </main>
 <div class="container">
    <div class="map-app">
@@ -141,7 +152,7 @@
           <a class="btn" value="VKontakte" href="#">Вконтакте</a>
           <a class="btn" value="facebook" href="#">Фэйсбук</a>
           <a class="btn" value="instagram" href="#">Инстаграм</a>
-          <p class="lets-friend"><b>Давайте дружить, это выгодно!</b></p>
+          <p class="text-bottom"><b>Давайте дружить, это выгодно!</b></p>
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </div>
    </footer>
