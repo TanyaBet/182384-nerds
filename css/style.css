@@ -1,6 +1,6 @@
 html,
 body {
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
   font-size: 16px;
   line-height: 22px;
   color: #283136;
@@ -10,7 +10,8 @@ body {
   min-height: 1750px;
 }
 .main-header {
-    min-height: 56px;
+    min-height: 126px;
+    background-color: #eeeeee;
 }
 
 .container {
@@ -18,19 +19,19 @@ body {
   margin: 0 auto;
   outline: 3px solid red;
   padding: 0 10px;
-  min-height: px;
   font-size: 0px;
 }
 .index-logo {
      width: 139px;
-     min-height: 56px;
+     min-height: px;
      outline: 3px solid yellow;
      float: left;
+     padding-top: 27px;
 }
 .main-navigation {
     outline: 3px solid yellow;
     width: 560px;
-    min-height: 56px;
+    min-height: 126px;
     float: right;
     color: #000000;
     text-transform: uppercase;
@@ -39,9 +40,9 @@ body {
     display: inline-block;
     margin-right: 46px;
     font-size: 14px;
+    margin-top: 55px;
 }
 .top-menu-link:nth-last-child {
-    float: right;
 }
 ul {
   padding-left: 0;
@@ -55,7 +56,7 @@ ul {
     width: 460px;
     outline: 3px solid blue;
     float: left;
-    font-family: Roboto Medium;
+    font-family: 'Roboto Medium';
     font-size: 16px;
     line-height: 22px;
     color: #283136;
@@ -92,7 +93,7 @@ ul {
   margin-bottom: 80px;
 }
 .service-text {
-    font-family: Roboto Medium;
+    font-family: 'Roboto Medium';
   font-size: 15px;
   line-height: 22px;
   color: #283136;
@@ -111,7 +112,7 @@ ul {
     float:left;
     margin-top: 74px;
     margin-bottom: 73px;
-    font-family: Roboto Medium;
+    font-family: 'Roboto Medium';
     font-size: 16px;
     line-height: 22px;
     color: #283136;
@@ -126,7 +127,7 @@ li {
     float:right;
     margin-top: 74px;
     margin-bottom: 73px;
-    font-family: Roboto Medium;
+    font-family: 'Roboto Medium';
     font-size: 16px;
     line-height: 22px;
     color: 283136
@@ -136,7 +137,7 @@ li {
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
 }
 .about-us-text {
     font-size: 16px;
@@ -144,7 +145,7 @@ li {
     color: #283136;
 }
 .year {
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
   font-size: 16px;
   line-height: 8,56;
   color: #000000;
@@ -157,15 +158,21 @@ li {
 }
 .contacts {
     min-height:63px;
+    width: 900px;
     outline: 2px solid green;
-    margin-top: 77px;
+    margin-top: 78px;
     margin-bottom: 76px;
+    padding-bottom: 77px;
 }
 h1 {
+    font-style: 'Roboto Medium';
     font-size: 40px;
-    line-height: auto;
+    line-height: 45px;
     color: #000000;
     text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 93px;;
 }
 h2,
 .text-bottom,
@@ -173,13 +180,13 @@ h2,
   font-size: 36px;
   line-height: 36px;
   color: #000000;
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
 }
 h3 {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
   text-transform: uppercase;
 }
 /*
@@ -199,6 +206,9 @@ h3 {
   background-color: #eeeeee;
   margin:0;
   padding:0;
+}
+.text-top {
+    height: 202px;
 }
 a {
   display:inline-block;
@@ -222,40 +232,40 @@ a {
   height: 86px;
   vertical-align: middle;
 }
+.logos-of-cites {
+  height: 170px;
+  margin-bottom: 85px;
+}
 .button-show, {
   font-size: 12px;
   line-height: 18px;
   font-family: Roboto Bold;
   text-transform: uppercase;
 }
-
 .sort {
   color: #000000;
   font-size: 12px;
   line-height: 18px;
   text-transform: uppercase;
+  float: left;
+}
+.top-text {
+    display: inline-block;
+    margin-left: 47px;
 }
 .regulation {
-    font-family: Roboto Medium;
+    font-family: 'Roboto Medium';
     color: #283136;
     font-size: 16px;
     line-height: 20px;
 }
 .features-head,
 .grid-head {
-  font-family: Roboto Medium;
+  font-family: 'Roboto Medium';
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-}
-.paginator {
-  height: 38px;
-  margin-bottom: 79px;
-  vertical-align: top;
-  font-size: 12px;
-  line-height: 18px;
-  color: #000000;
 }
 .pagination-item {
   background: #f1f1f1;
@@ -276,10 +286,75 @@ a {
   float-right: 10px;
   text-transform: uppercase;
 }
+.catalog-content {
+    min-height: 1285px;
+}
+.block-left {
+    width: 240px;
+    outline: 1px solid black;
+    float:left;
+    margin-top:83px;
+}
+.block-right {
+    width: 560px;
+    min-height: 1005px;
+    float:right;
+    outline: 1px solid blue;
+    padding: 0px;
+    margin-top: 83px;
+    margin-bottom: 80px;
+}
+.filter {
+    height: 240px;
+}
+.model {
+ outline: 2px solid black;
+ width: 240px;
+ height: 270px;
+ display: inline-block;
+ float:left;
+ margin-bottom: 80px;
+}
+.model:nth-child(2n) {
+    float: right;
+}
+.model-avenue,
+.model-dovetail {
+    margin-bottom:0px;
+}
+.paginator {
+  height: 38px;
+ /*width: 284px;*/
+  margin-bottom: 79px;
+  vertical-align: top;
+  font-size: 12px;
+  line-height: 18px;
+  color: #000000;
+  clear:both;
+  margin-bottom: 79px;
+  margin-left:320px;
+}
 .map-app {
   width: 1200px;
   height: 420px;
   border: 1px solid gray;
+}
+.icon {
+    width: 240px;
+    height: 63px;
+    outline: 1px solid gray;
+    float:left;
+    margin-right: 78px;
+}
+.text-bottom {
+    display: inline-block;
+    margin: 0px;
+}
+.paragraph-bottom {
+    font-family: 'Roboto Bold';
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
 }
 .filter-head {
   text-transform: uppercase;
