@@ -1,3 +1,4 @@
+html,
 body {
   font-family: Roboto Medium;
   font-size: 16px;
@@ -5,16 +6,160 @@ body {
   color: #283136;
   margin:0;
   padding:0;
+  min-width: 1200px;
+  min-height: 1750px;
 }
-header {
-  font-size: 14px;
-  line-height: 30px;
-  color: #000000;
-  background-color: #eeeeee;
+.main-header {
+    min-height: 56px;
 }
+
 .container {
-  width: 1200px;
+  width: 900px;
   margin: 0 auto;
+  outline: 3px solid red;
+  padding: 0 10px;
+  min-height: px;
+  font-size: 0px;
+}
+.index-logo {
+     width: 139px;
+     min-height: 56px;
+     outline: 3px solid yellow;
+     float: left;
+}
+.main-navigation {
+    outline: 3px solid yellow;
+    width: 560px;
+    min-height: 56px;
+    float: right;
+    color: #000000;
+    text-transform: uppercase;
+}
+.top-menu-link {
+    display: inline-block;
+    margin-right: 46px;
+    font-size: 14px;
+}
+.top-menu-link:nth-last-child {
+    float: right;
+}
+ul {
+  padding-left: 0;
+}
+.slider-inner {
+    min-height: 231px;
+    outline: 3px solid yellow;
+}
+.feature {
+    min-height: 231px;
+    width: 460px;
+    outline: 3px solid blue;
+    float: left;
+    font-family: Roboto Medium;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+
+.slide-image {
+    width:338px;
+    min-height:231px;
+    outline: 1px solid green;
+    float: right;
+}
+.clearfix:after {
+    content: ' ';
+    display:table;
+    clear:both;
+}
+.service-web-sites,
+.service-apps{
+    width: 241px;
+    min-height: 300px;
+    outline: 2px solid black;
+    float: left;
+    margin-right: 88px;
+}
+.service-presentations {
+    width: 241px;
+    min-height: 300px;
+    outline: 2px solid black;
+    float:right;
+    margin: 0px;
+}
+.service {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.service-text {
+    font-family: Roboto Medium;
+  font-size: 15px;
+  line-height: 22px;
+  color: #283136;
+}
+.slide-item-button,
+.button-order {
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 18px;
+}
+.about-us {
+    min-height:341px;
+    width: 571px;
+    outline: 2px solid green;
+    margin-right: 68px;
+    float:left;
+    margin-top: 74px;
+    margin-bottom: 73px;
+    font-family: Roboto Medium;
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+li {
+  list-style-type: none;
+}
+.about-us-visual {
+    min-height:341px;
+    width:225px;
+    outline: 2px solid green;
+    float:right;
+    margin-top: 74px;
+    margin-bottom: 73px;
+    font-family: Roboto Medium;
+    font-size: 16px;
+    line-height: 22px;
+    color: 283136
+}
+.text-bottom,
+.about-us-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: #000000;
+  font-family: Roboto Medium;
+}
+.about-us-text {
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+.year {
+  font-family: Roboto Medium;
+  font-size: 16px;
+  line-height: 8,56;
+  color: #000000;
+  text-transform: uppercase;
+}
+.map-app {
+    min-height: 416px;
+    width: 100%;
+    outline: 2px solid green;
+}
+.contacts {
+    min-height:63px;
+    outline: 2px solid green;
+    margin-top: 77px;
+    margin-bottom: 76px;
 }
 h1 {
     font-size: 40px;
@@ -30,13 +175,6 @@ h2,
   color: #000000;
   font-family: Roboto Medium;
 }
-.year {
-  font-family: Roboto Medium;
-  font-sise: 16px;
-  line-height: 8,56;
-  color: #000000;
-  text-transform: uppercase;
-}
 h3 {
   font-size: 18px;
   line-height: 30px;
@@ -44,15 +182,7 @@ h3 {
   font-family: Roboto Medium;
   text-transform: uppercase;
 }
-.service-text {
-  font-family: Roboto Medium;
-  font-size: 15px;
-  line-height: 22px;
-  color: #283136;
-}
-.index-logo {
-  width:139px;
-}
+/*
 .top-menu {
     font-size: 14px;
     line-height: 30px;
@@ -63,6 +193,7 @@ h3 {
     background-color: #eeeeee;
     text-transform: uppercase;
 }
+*/
 .text-top,
 .slider {
   background-color: #eeeeee;
@@ -90,15 +221,6 @@ a {
   width: 209px;
   height: 86px;
   vertical-align: middle;
-}
-li {
-  list-style-type: none;
-}
-.slide-item-button,
-.button-order {
-  text-transform: uppercase;
-  font-size: 12px;
-  line-height: 18px;
 }
 .button-show, {
   font-size: 12px;
