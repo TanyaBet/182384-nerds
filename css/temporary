@@ -1,0 +1,204 @@
+        /*html код без контента*/
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+    <title>HTML Academy: Нердс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+          <div class="index-logo"></div>
+          <nav class="main-navigation">
+           <ul class="top-menu">
+           <li class="top-menu-link"><a href="#">Студия</a></li>
+              <li class="top-menu-link"><a href="#">Клиенты</a></li>
+              <li class="top-menu-link"><a href="catalog.html">Магазин</a></li>
+              <li class="top-menu-link"><a href="#">Контакты</a></li>
+              <li class="top-menu-link"><a href="#">Корзина</a></li>
+              </ul>
+          </nav>
+       </div>
+      </div>
+    </header>
+<div class="slider">
+      <div class="container">
+                <div class="slider-inner clearfix">
+                  <div class="slide-item">
+                     <div class="feature"></div>
+                     <div class="slide-image">
+                     </div>
+                  </div>
+                  <div class="slide-item">
+                     <div class="feature"></div>
+                     <div class="slide-image">
+                     </div>
+                  </div>
+                  <div class="slide-item">
+                     <div class="feature"></div>
+                     <div class="slide-image">
+                     </div>
+                  </div>
+                  </div>
+              </div>
+        </div>
+        <main>
+      <div class="services">
+       <div class="container clearfix">
+        <div class="service service-web-sites">
+        </div>
+        <div class="service service-apps">
+        </div>
+          <div class="service service-presentations">
+        </div>
+       </div>
+      </div>
+      <div class="studio">
+       <div class="container clearfix">
+        <div class="about-us">
+        </div>
+        <div class="about-us-visual">
+          </div>
+         </div>
+       </div>
+      <div>
+      <div class="logos-of-cites">
+        <div class="container">
+        </div>
+      </div>
+    </main>
+    <div class="map-app">
+    </div>
+    <footer class="main-footer">
+      <div class="container">
+          <div class="contacts">
+            <a class="btn" value="VKontakte" href="#">Вконтакте</a>
+            <a class="btn" value="facebook" href="#">Фэйсбук</a>
+            <a class="btn" value="instagram" href="#">Инстаграм</a>
+            <p class="text-bottom"><b>Давайте дружить, это выгодно!</b></p>
+            <p>Скидка 10% для друзей из социальных сетей.</p>
+          </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+  /* CSS */
+
+html,
+body {
+  min-width: 1200px;
+  min-height: 1750px;
+  margin: 0;
+  padding: 0;
+}
+.main-header {
+    min-height: 56px;
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  outline: 3px solid red;
+  padding: 0 10px;
+  min-height: 56px;
+  font-size: 0px;
+}
+.index-logo {
+     width: 139px;
+     min-height: 56px;
+     outline: 3px solid yellow;
+     float: left;
+}
+.main-navigation {
+    outline: 3px solid yellow;
+    width: 560px;
+    min-height: 56px;
+    float: right;
+    color: #000000;
+    text-transform: uppercase;
+}
+.top-menu-link {
+    display: inline-block;
+    margin-right: 46px;
+    font-size: 14px;
+}
+.top-menu-link:nth-last-child {
+    float: right;
+}
+ul {
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.slider-inner {
+    min-height: 231px;
+    outline: 3px solid yellow;
+}
+.feature {
+    min-height: 231px;
+    width: 460px;
+    outline: 3px solid blue;
+    float: left;
+}
+
+.slide-image {
+    width:338px;
+    min-height:231px;
+    outline: 1px solid green;
+    float: right;
+}
+.clearfix:after {
+    content: ' ';
+    display:table;
+    clear:both;
+}
+.service-web-sites,
+.service-apps{
+    width: 241px;
+    min-height: 300px;
+    outline: 2px solid black;
+    float: left;
+    margin-right: 88px;
+}
+.service-presentations {
+    width: 241px;
+    min-height: 300px;
+    outline: 2px solid black;
+    float:right;
+    margin: 0px;
+}
+.service {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.about-us {
+    min-height:341px;
+    width: 571px;
+    outline: 2px solid green;
+    margin-right: 68px;
+    float:left;
+    margin-top: 74px;
+    margin-bottom: 73px;
+}
+.about-us-visual {
+    min-height:341px;
+    width:225px;
+    outline: 2px solid green;
+    float:right;
+    margin-top: 74px;
+    margin-bottom: 73px;
+}
+.map-app {
+    min-height: 416px;
+    width: 100%;
+    outline: 2px solid green;
+}
+.contacts {
+    min-height:63px;
+    outline: 2px solid green;
+    margin-top: 77px;
+    margin-bottom: 76px;
+}
