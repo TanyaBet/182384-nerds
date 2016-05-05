@@ -2,6 +2,8 @@
 <html lang="ru">
   <head>
      <meta charset="utf-8">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+     <link href="css/normalize.css" type="text/css" rel="stylesheet">
      <link href="css/style.css" type="text/css" rel="stylesheet">
      <title>HTML Academy: Нердс</title>
   </head>
@@ -12,7 +14,7 @@
            <a href="index.html"><img src="img/index-logo.png" width="139" height="56" alt="Нёрдс"></a>
         </div>
       <nav class="main-navigation">
-         <ul class="top-menu">
+        <ul class="main-menu nowrap">
             <li class="top-menu-link"><a href="#">Студия</a></li>
             <li class="top-menu-link"><a href="#">Клиенты</a></li>
             <li class="top-menu-link"><a href="index.html">Магазин</a></li>
@@ -20,6 +22,7 @@
             <li class="top-menu-link"><a href="#">Корзина</a></li>
          </ul>
       </nav>
+    </div>
  </header>
  <div class="text-top">
     <div class="container">
@@ -27,65 +30,73 @@
     </div>
  </div>
 <main>
-<div class="container clearfix">
- <div class="catalog-content">
+<div class="container">
+ <div class="catalog-content clearfix">
     <aside class="block-left">
-     <form>
-      <fieldset>
       <div class="filter">
-        <legend class="filter-head">Стоимость:</legend>
-      <!--фильтр-->
+        <span class="filter-head">Стоимость:</span>
+        <form action="form.php" method="GET">
+          <div class="range-filter">
+           <div class="range-controls">
+              <div class="scale">
+                  <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+           </div>
+           <div class="price-controls">
+             <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+             <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+           </div>
+          </div>
+        </form>
       </div>
-      </fieldset>
       <div class="regulation">
-      <fieldset>
         <div class="grid">
-                <legend class="grid-head">Сетка:</legend>
-           </label>
+                <span class="grid-head">Сетка:</span>
+           <label>
             <input type="radio" name="type" value="Адаптивная" checked>
              Адаптивная
            </label><br>
-           </label>
+           <label>
             <input type="radio" name="type" value="Фиксированная">
              Фиксированная
            </label><br>
-           </label>
+           <label>
             <input type="radio" name="type" value="Резиновая">
              Резиновая
            </label>
       </div>
-     </fieldset>
-     <fieldset>
       <div class="features">
-            <legend class="features-head">Особенности:</legend>
+            <span class="features-head">Особенности:</span>
         <ul class="choose-features">
           <li><input type="checkbox" name="attribute" checked>
-              <label for="Слайдер">Слайдер</label></li>
+              <label>Слайдер</label></li>
           <li><input type="checkbox" name="attribute">
-              <label for="Блок преимуществ">Блок преимуществ</label></li>
+              <label>Блок преимуществ</label></li>
           <li><input type="checkbox" name="attribute" checked>
-              <label for="Новости">Новости</label></li>
+              <label>Новости</label></li>
           <li><input type="checkbox" name="attribute">
-              <label for="Галерея">Галерея</label></li>
+              <label>Галерея</label></li>
           <li><input type="checkbox" name="attribute">
-              <label for="Корзина">Корзина</label></li><br>
+              <label>Корзина</label></li>
+        </ul>
       </div>
       <input class="button-show" type="submit" value="Показать">
-    </fieldset>
-    </form>
+      </div>
    </aside>
   <div class="block-right">
-   <div class="sort"
-       <p class="top-text">Сортировать:</p>
+   <div class="sort">
+       <span class="sort-text">Сортировать:</span>
      <ul>
-       <li class="top-text">По цене</li>
-       <li class="top-text">По типу</li>
-       <li class="top-text">По функционалу</li>
+       <li>По цене</li>
+       <li>По типу</li>
+       <li>По функционалу</li>
      </ul>
    </div>
    <div class="model model-aviator">
       <div class="img">
-        <img src="img/aviator-model.png" weight="240" height="240" alt="aviator">
+        <img src="img/aviator-model.png" width="240" height="240" alt="aviator">
       </div>
       <div class="window">
         <!--всплывающее окно с названием-->
@@ -93,17 +104,17 @@
    </div>
    <div class="model model-sunset">
       <div class="img">
-        <img src="img/sunset-model.png" weight="240" height="240" alt="sunset">
+        <img src="img/sunset-model.png" width="240" height="240" alt="sunset">
       </div>
       <div class="window">
-      SUNSET
+              <span>SUNSET</span>
       <p class="description">Интернет-магазин с личным кабинетом</p>
       <a class="btn" href="#">10000 Р.</a>
       </div>
    </div>
    <div class="model model-forte">
      <div class="img">
-       <img src="img/forte-model.png" weight="240" height="240" alt="forte">
+       <img src="img/forte-model.png" width="240" height="240" alt="forte">
      </div>
      <div class="window">
      <!--всплывающее окно с названием-->
@@ -111,14 +122,14 @@
    </div>
    <div class="model model-thai">
      <div class="img">
-       <img src="img/thai-model.png" weight="240" height="240" alt="thai">
+       <img src="img/thai-model.png" width="240" height="240" alt="thai">
      </div>
      <div class="window">
      <!--всплывающее окно с названием-->
      </div>
    </div>
    <div class="model model-avenue">
-     <img src="img/avenue-model.png" weight="240" height="240" alt="avenue">
+     <img src="img/avenue-model.png" width="240" height="240" alt="avenue">
      <div class="img">
      </div>
      <div class="window">
@@ -126,7 +137,7 @@
      </div>
    </div>
    <div class="model model-dovetail">
-     <img src="img/dovetail-model.png" weight="240" height="240" alt="dovetail">
+     <img src="img/dovetail-model.png" width="240" height="240" alt="dovetail">
      <div class="img">
      </div>
      <div class="window">
@@ -135,32 +146,30 @@
    </div>
   </div>
   <div class="paginator">
-              <a href="#" class="pagination-item" checked>1</a>
+              <a href="#" class="pagination-item">1</a>
               <a href="#" class="pagination-item">2</a>
               <a href="#" class="pagination-item">3</a>
               <a href="#" class="next">Следующая</a>
    </div>
-  </div>
  </div>
 </main>
  <div class="container">
    <div class="map-app">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" style="border:0" allowfullscreen></iframe>
         </div>
   </div>
    <footer class="main-footer">
     <div class="container">
         <div class="contacts">
         <div class="icon">
-          <a class="btn" value="VKontakte" href="#">Вконтакте</a>
-          <a class="btn" value="facebook" href="#">Фэйсбук</a>
-          <a class="btn" value="instagram" href="#">Инстаграм</a>
+          <a class="btn" href="#">Вконтакте</a>
+          <a class="btn" href="#">Фэйсбук</a>
+          <a class="btn" href="#">Инстаграм</a>
          </div>
           <p class="text-bottom"><b>Давайте дружить, это выгодно!</b></p>
           <p class="paragraph-bottom">Скидка 10% для друзей из социальных сетей.</p>
         </div>
       </div>
    </footer>
-  </div>
  </body>
 </html>
