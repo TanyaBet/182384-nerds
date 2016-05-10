@@ -19,7 +19,7 @@
             <li class="top-menu-link"><a href="#">Клиенты</a></li>
             <li class="top-menu-link"><a href="index.html">Магазин</a></li>
             <li class="top-menu-link"><a href="#">Контакты</a></li>
-            <li class="top-menu-link"><a href="#">Корзина</a></li>
+            <li class="top-menu-link"><span class="icon-basket"></span><a href="#">Корзина</a></li>
          </ul>
       </nav>
     </div>
@@ -34,7 +34,8 @@
  <div class="catalog-content clearfix">
     <aside class="block-left">
       <div class="filter">
-        <span class="filter-head">Стоимость:</span>
+        <fieldset>
+        <legend class="filter-text">Стоимость:</legend>
         <form action="form.php" method="GET">
           <div class="range-filter">
            <div class="range-controls">
@@ -50,10 +51,12 @@
            </div>
           </div>
         </form>
+      </fieldset>
       </div>
       <div class="regulation">
         <div class="grid">
-                <span class="grid-head">Сетка:</span>
+          <fieldset>
+              <legend>Сетка:</legend>
            <label>
             <input type="radio" name="type" value="Адаптивная" checked>
              Адаптивная
@@ -66,9 +69,12 @@
             <input type="radio" name="type" value="Резиновая">
              Резиновая
            </label>
+         </fieldset>
       </div>
       <div class="features">
-            <span class="features-head">Особенности:</span>
+         <fieldset>
+            <!--<span class="features-head">Особенности:</span>-->
+            <legend>Особенности:</legend>
         <ul class="choose-features">
           <li><input type="checkbox" name="attribute" checked>
               <label>Слайдер</label></li>
@@ -81,17 +87,22 @@
           <li><input type="checkbox" name="attribute">
               <label>Корзина</label></li>
         </ul>
+       </fieldset>
       </div>
       <input class="button-show" type="submit" value="Показать">
       </div>
    </aside>
-  <div class="block-right">
+  <div class="block-right clearfix">
+    <div class="toggles">
+      <a class="icon-down-dir" href="#"></a>
+      <a class="icon-up-dir" href="#"></a>
+    </div>
    <div class="sort">
        <span class="sort-text">Сортировать:</span>
      <ul>
-       <li>По цене</li>
-       <li>По типу</li>
-       <li>По функционалу</li>
+       <li><a href="#">По цене</a></li>
+       <li><a href="#">По типу</a></li>
+       <li><a href="#">По функционалу</a></li>
      </ul>
    </div>
    <div class="model model-aviator">
@@ -106,10 +117,10 @@
       <div class="img">
         <img src="img/sunset-model.png" width="240" height="240" alt="sunset">
       </div>
-      <div class="window">
-              <span>SUNSET</span>
+       <div class="window">
+            <!--<span>SUNSET</span>
       <p class="description">Интернет-магазин с личным кабинетом</p>
-      <a class="btn" href="#">10000 Р.</a>
+      <a class="btn" href="#">10000 Р.</a>-->
       </div>
    </div>
    <div class="model model-forte">
@@ -129,16 +140,16 @@
      </div>
    </div>
    <div class="model model-avenue">
-     <img src="img/avenue-model.png" width="240" height="240" alt="avenue">
-     <div class="img">
-     </div>
-     <div class="window">
-     <!--всплывающее окно с названием-->
-     </div>
-   </div>
+      <div class="img">
+      <img src="img/avenue-model.png" width="240" height="240" alt="avenue">
+      </div>
+      <div class="window">
+      <!--всплывающее окно с названием-->
+      </div>
+    </div>
    <div class="model model-dovetail">
-     <img src="img/dovetail-model.png" width="240" height="240" alt="dovetail">
      <div class="img">
+     <img src="img/dovetail-model.png" width="240" height="240" alt="dovetail">
      </div>
      <div class="window">
      <!--всплывающее окно с названием-->
@@ -155,20 +166,28 @@
 </main>
  <div class="container">
    <div class="map-app">
+     <div class="communication">
+       NЁRDS DESIGN STUDIO
+       191186, Санкт-Петербург, <br>
+       ул. Б. Конюшенная, д. 9/8 <br>
+       тел. +7(812)275-75-75
+
+     </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" style="border:0" allowfullscreen></iframe>
         </div>
   </div>
    <footer class="main-footer">
     <div class="container">
-        <div class="contacts">
-        <div class="icon">
-          <a class="btn" href="#">Вконтакте</a>
-          <a class="btn" href="#">Фэйсбук</a>
-          <a class="btn" href="#">Инстаграм</a>
-         </div>
-          <p class="text-bottom"><b>Давайте дружить, это выгодно!</b></p>
-          <p class="paragraph-bottom">Скидка 10% для друзей из социальных сетей.</p>
-        </div>
+      <div class="contacts">
+        <div class="social-buttons">
+         <a class="social" href="#"><span class="icon-vk"></span><!--Вконтакте--></a>
+         <a class="social" href="#"><span class="icon-facebook"></span><!--Фэйсбук--></a>
+         <a class="social" href="#"><span class="icon-instagramm"></span><!--Инстаграм--></a>
+       </div>
+       <div class="text-bottom">
+         <p class="text-bottom-big"><b>Давайте дружить, это выгодно!</b></p>
+         <p class="text-bottom-small">Скидка 10% для друзей из социальных сетей.</p>
+       </div>
       </div>
    </footer>
  </body>

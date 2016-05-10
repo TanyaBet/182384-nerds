@@ -5,6 +5,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto:500,700&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
     <link href="css/normalize.css" type="text/css" rel="stylesheet">
     <link href="css/style.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <title>HTML Academy: Нердс</title>
   </head>
   <body>
@@ -15,11 +16,11 @@
           </div>
           <nav class="main-navigation">
            <ul class="main-menu nowrap">
-              <li><span>студия</span></li>
+              <li class="active"><span>студия</span></li>
               <li class="top-menu-link"><a href="#">клиенты</a></li>
               <li class="top-menu-link"><a href="catalog.html">магазин</a></li>
               <li class="top-menu-link"><a href="#">контакты</a></li>
-              <li class="top-menu-link"><a href="#">корзина</a></li>
+              <li class="top-menu-link"><span class="icon-basket"></span><a href="#">корзина</a></li>
            </ul>
           </nav>
        </div>
@@ -104,6 +105,7 @@
       </div>
       <div class="studio">
         <div class="container clearfix">
+         <hr>
          <div class="about-us">
              <span class="about-us-title"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></span>
              <span class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим
@@ -118,7 +120,7 @@
          </div>
          <div class="about-us-visual">
             <div><img src="img/NerdsObject.png" width="187" height="75" alt="nerds"></div>
-            <div class="year">Since 2004</div>
+            <div class="year"><span>Since 2004</span><hr></div>
             <h4>КАК МЫ РАБОТАЕМ:</h4>
             <ul>
               <li>С самоотдачей 146%</li>
@@ -128,30 +130,54 @@
          </div>
        </div>
      </div>
-    <div class="logos-of-cites">
         <div class="container">
+          <hr>
+          <div class="logos-of-cites">
           <a class="glukhanko-cite" href="http://glukhanko.ru/"><img src="img/glukhanko-logo.png" alt="gluckanko-logo"></a>
-         <a class="academy-cite" href="https://htmlacademy.ru/"><img src="img/htmlacademy-logo.png" alt="htmlacademy-logo"></a>
-         <a class="borodinsky-cite" href="#"><img src="img/borodinsky-logo.png" alt="borodinsky-logo"></a>
+          <a class="academy-cite" href="https://htmlacademy.ru/"><img src="img/htmlacademy-logo.png" alt="htmlacademy-logo"></a>
+          <a class="borodinsky-cite" href="#"><img src="img/borodinsky-logo.png" alt="borodinsky-logo"></a>
+          <hr>
         </div>
       </div>
     </main>
-  <div class="container">
-   <div class="map-app">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" style="border:0" allowfullscreen></iframe>
-    </div>
+<!--  <div class="container">-->
+   <div class="communication">
+     <span class="communication-head"><b>NЁRDS DESIGN STUDIO</b></span><br>
+     <p>191186, Санкт-Петербург, <br>
+     ул. Б. Конюшенная, д. 9/8</p>
+     <span class="number">тел. +7(812)275-75-75</span>
+     <a class="button-write-us" href="#">Напишите нам</a>
    </div>
+   <div class="map-app">
+     <img src="img/map.png" width="1200" height="417">
+        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" style="border:0" allowfullscreen></iframe>-->
+    </div>
+    <div class="write-us">
+      <form action="#" method="post">
+        <div class="input-field-name">
+         <label>Ваше имя: </label><br>
+         <input type="text" name="name" value="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+        </div>
+        <div class="input-field-email">
+         <label>Ваш e-mail: </label><br>
+         <input type="text" name="e-mail" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
+        </div>
+         <label class="textarea-text"> Текст письма: <br><textarea class="textarea-letter">В СВОБОДНОЙ ФОРМЕ</textarea></label>
+         <input class="button-send" type="submit" value="ОТПРАВИТЬ">
+      </form>
+    </div>
+  <!--</div>-->
     <footer class="main-footer">
       <div class="container">
           <div class="contacts">
             <div class="social-buttons">
-             <a class="btn" href="#">Вконтакте</a>
-             <a class="btn" href="#">Фэйсбук</a>
-             <a class="btn" href="#">Инстаграм</a>
+             <a class="social" href="#"><span class="icon-vk"></span><!--Вконтакте--></a>
+             <a class="social" href="#"><span class="icon-facebook"></span><!--Фэйсбук--></a>
+             <a class="social" href="#"><span class="icon-instagramm"></span><!--Инстаграм--></a>
            </div>
-           <div class="">
-             <p class="text-bottom"><b>Давайте дружить, это выгодно!</b></p>
-             <p>Скидка 10% для друзей из социальных сетей.</p>
+           <div class="text-bottom">
+             <p class="text-bottom-big"><b>Давайте дружить, это выгодно!</b></p>
+             <p class="text-bottom-small">Скидка 10% для друзей из социальных сетей.</p>
            </div>
          </div>
       </div>
