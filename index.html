@@ -16,67 +16,63 @@
           </div>
           <nav class="main-navigation">
            <ul class="main-menu nowrap">
-              <li class="active"><span>студия</span></li>
-              <li class="top-menu-link"><a href="#">клиенты</a></li>
-              <li class="top-menu-link"><a href="catalog.html">магазин</a></li>
-              <li class="top-menu-link"><a href="#">контакты</a></li>
-              <li class="top-menu-link"><span class="icon-basket"></span><a href="#">корзина</a></li>
+             <li class="top-menu-link">
+              <span class="active">студия</span>
+             </li>
+              <li class="top-menu-link">
+                <a href="#">клиенты</a>
+             </li>
+              <li class="top-menu-link">
+                <a href="catalog.html">магазин</a>
+             </li>
+              <li class="top-menu-link">
+                <a href="#">контакты</a>
+             </li>
+             <li class="top-menu-link menu-basket-link">
+               <a class="icon-basket" href="#">Корзина</a>
+             </li>
            </ul>
           </nav>
-       </div>
+        </div>
     </header>
-  <div class="slider">
-    <div class="container">
+      <div class="slider">
+        <div class="container">
          <div class="slider-inner">
-                <div class="slider-controls">
-            <!--    <input type="radio" id="btn-1" name="toggle" checked>
-                <input type="radio" id="btn-2" name="toggle">
-                <input type="radio" id="btn-3" name="toggle">
-                <div class="slider-controls">
-                    <label for="btn-1"></label>
-                    <label for="btn-2"></label>
-                    <label for="btn-3"></label>-->
-                     <i class="active"></i>
-                     <i></i>
-                     <i></i>
-                 </div>
-                 <!--<div class="slider-inner clearfix">
-                 <div class="slider-slides">-->
-                 <div class="slider-slides">
-                  <div class="slide-item">
-                     <div class="feature">
-                     <h2>Долго, дорого, скрупулезно.</h2>
-                       <p>Математически выверенный дизайн<br>
-                          для вашего сайта или мобильного приложения.</p>
-                       <a class="slide-item-button" href="#">Узнать больше</a>
-                       </div>
-                   <div class="slide-image">
-                     <img src="img/slide-image1.png" width="338" height="231" alt="devices">
-                   </div>
-                  </div>
-                  <div class="slide-item">
-                     <div class="feature">
-                     <h2>Любите ли вы математику, как любим ее мы?</h2>
-                       <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
-                       <a class="slide-item-button" href="#">Узнать больше</a></div>
-                   <div class="slide-image">
-                     <img src="img/slide-image2.png" alt="calculator" width="230" height="249">
-                   </div>
-                  </div>
-                  <div class="slide-item">
-                     <div class="feature">
-                     <h2>Только наркотики, только хардкор!</h2>
-                       <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
-                       <a class="slide-item-button" href="#">Узнать больше</a>
-                     </div>
-                   <div class="slide-image">
-                     <img src="img/slide-image3.png" alt="fun" width="333" height="319">
-                   </div>
-                   </div>
+            <input type="radio" id="btn-1" name="toggle" checked>
+            <input type="radio" id="btn-2" name="toggle">
+            <input type="radio" id="btn-3" name="toggle">
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+          <div class="slides">
+                    <div class="slide">
+                      <div class="slide-text">
+                        <div class="slide-title">Долго, дорого, скрупулезно</div>
+                        <p>Математически выверенный дизайн<br>
+                         для вашего сайта или мобильного приложения.</p>
+                        <a class="slide-button slide-button-left" href="#">Узнать больше</a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide-text">
+                        <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+                        <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
+                        <a class="slide-button slide-button-middle" href="#">Узнать больше</a>
+                      </div>
+                    </div>
+                    <div class="slide">
+                      <div class="slide-text">
+                        <div class="slide-title">Только наркотики, только хардкор!</div>
+                        <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
+                        <a class="slide-button slide-button-right" href="#">Узнать больше</a>
+                      </div>
+                    </div>
                   </div>
                 </div>
-             </div>
-    </div>
+              </div>
+            </div>
         <main>
       <div class="services">
        <div class="container clearfix">
@@ -105,24 +101,23 @@
       </div>
       <div class="studio">
         <div class="container clearfix">
-         <hr>
          <div class="about-us">
              <span class="about-us-title"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></span>
              <span class="about-us-text">Исповедуем принципы минимализма и чистоты. Ставим
               математический расчет выше креатива.
               Работаем не покладая рук, как роботы.</span>
               <h4>ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</h4>
-              <ul>
+              <ul class="about-us-list">
                 <li>Веб-сайтов любой сложности</li>
                 <li>Мобильных приложений для iOS и Android</li>
                 <li>Слайдшоу и видео для корпоративных презентаций</li>
               </ul>
          </div>
          <div class="about-us-visual">
-            <div><img src="img/NerdsObject.png" width="187" height="75" alt="nerds"></div>
-            <div class="year"><span>Since 2004</span><hr></div>
+            <div class="object-nerds"><img src="img/NerdsObject.png" width="187" height="75" alt="nerds"></div>
+            <div class="year"><span>Since 2004</span></div>
             <h4>КАК МЫ РАБОТАЕМ:</h4>
-            <ul>
+            <ul class="sbout-us-list">
               <li>С самоотдачей 146%</li>
               <li>Соблюдая сроки на 100%</li>
               <li>По предоплате 50%</li>
@@ -130,15 +125,13 @@
          </div>
        </div>
      </div>
-        <div class="container">
-          <hr>
-          <div class="logos-of-cites">
+        <div class="logos">
+          <div class="container logos-wrap">
           <a class="glukhanko-cite" href="http://glukhanko.ru/"><img src="img/glukhanko-logo.png" alt="gluckanko-logo"></a>
           <a class="academy-cite" href="https://htmlacademy.ru/"><img src="img/htmlacademy-logo.png" alt="htmlacademy-logo"></a>
           <a class="borodinsky-cite" href="#"><img src="img/borodinsky-logo.png" alt="borodinsky-logo"></a>
-          <hr>
+          </div>
         </div>
-      </div>
     </main>
 <!--  <div class="container">-->
    <div class="communication">
@@ -149,10 +142,11 @@
      <a class="button-write-us" href="#">Напишите нам</a>
    </div>
    <div class="map-app">
-     <img src="img/map.png" width="1200" height="417">
-        <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123713!2d30.32089461573676!3d59.93879686904836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1462174808913" width="1199" height="416" style="border:0" allowfullscreen></iframe>-->
-    </div>
-    <div class="write-us">
+     <div class="container map-wrap">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9uSLLRkU7yz5ot2y6dyysRrsj2R7G9Mk&width=880&amp;height=416&lang=ru_RU&sourceType=constructor&scroll=true"></script>
+   </div>
+    <div class="modal-content">
+      <button class="modal-content-close" type="button" name="button"></button>
       <form action="#" method="post">
         <div class="input-field-name">
          <label>Ваше имя: </label><br>
@@ -182,5 +176,32 @@
          </div>
       </div>
     </footer>
+    <script> var button = document.querySelector(".button-write-us");
+             var popup = document.querySelector(".modal-content");
+             var close = document.querySelector(".modal-content-close");
+             var authorize = popup.querySelector("[name=name]");
+             var form = popup.querySelector(".form")
+
+             button.addEventListener("click", function(event) {
+               event.preventDefault()
+               popup.classList.add("modal-content-show")
+               authorize.focus()
+
+             });
+             close.addEventListener("click", function(event) {
+               event.preventDefault()
+               popup.classList.remove("modal-content-show")
+             });
+
+             window.addEventListener("keydown", function(event) {
+                    if (event.keyCode === 27) {
+                      if (popup.classList.contains("modal-content-show")) {
+                        popup.classList.remove("modal-content-show");
+                      }
+                    }
+                  });
+
+
+    </script>
   </body>
 </html>
