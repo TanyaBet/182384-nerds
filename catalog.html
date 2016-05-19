@@ -5,7 +5,7 @@
      <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
      <link href="css/normalize.css" type="text/css" rel="stylesheet">
      <link href="css/style.css" type="text/css" rel="stylesheet">
-     <title>HTML Academy: Нердс</title>
+     <title>Магазин</title>
   </head>
 <body>
  <header class="main-header">
@@ -15,11 +15,21 @@
         </div>
       <nav class="main-navigation">
         <ul class="main-menu nowrap">
-            <li class="top-menu-link"><a href="#">Студия</a></li>
-            <li class="top-menu-link"><a href="#">Клиенты</a></li>
-            <li class="top-menu-link"><a href="index.html">Магазин</a></li>
-            <li class="top-menu-link"><a href="#">Контакты</a></li>
-            <li class="top-menu-link"><span class="icon-basket"></span><a href="#">Корзина</a></li>
+            <li class="top-menu-link">
+              <a href="index.html">Студия</a>
+            </li>
+            <li class="top-menu-link">
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="top-menu-link">
+              <span class="active">Магазин</span>
+            </li>
+            <li class="top-menu-link">
+              <a href="#">Контакты</a>
+            </li>
+            <li class="top-menu-link">
+              <span class="icon-basket"></span><a href="#">Корзина</a>
+            </li>
          </ul>
       </nav>
     </div>
@@ -57,37 +67,27 @@
         <div class="grid">
           <fieldset>
               <legend>Сетка:</legend>
-          <ul class="grid-functions">
-           <li>
-            <input type="radio" name="type" value="Адаптивная" checked>
-             <label>Адаптивная</label><br>
-           </li>
-           <li>
-             <input type="radio" name="type" value="Фиксированная">
-             <label>Фиксированная</label><br>
-           </li>
-           <li>
-            <input type="radio" name="type" value="Резиновая">
-              <label>Резиновая</label>
-           </li>
-         </ul>
+            <input type="radio" name="type" id="grid-functions-1" value="Адаптивная">
+                <label for="grid-functions-1">Адаптивная</label><br>
+            <input type="radio" name="type" id="grid-functions-2" value="Фиксированная">
+                <label for="grid-functions-2">Фиксированная</label><br>
+            <input type="radio" name="type" id="grid-functions-3" value="Резиновая">
+                <label for="grid-functions-3">Резиновая</label>
          </fieldset>
       </div>
       <div class="features">
          <fieldset>
             <legend>Особенности:</legend>
-        <ul class="choose-features">
-          <li><input type="checkbox" name="attribute" checked>
-              <label>Слайдер</label></li>
-          <li><input type="checkbox" name="attribute">
-              <label>Блок преимуществ</label></li>
-          <li><input type="checkbox" name="attribute" checked>
-              <label>Новости</label></li>
-          <li><input type="checkbox" name="attribute">
-              <label>Галерея</label></li>
-          <li><input type="checkbox" name="attribute">
-              <label>Корзина</label></li>
-        </ul>
+          <input type="checkbox" id="features-checkbox-1" name="attribute">
+              <label for="features-checkbox-1">Слайдер</label><br>
+          <input type="checkbox" id="features-checkbox-2" name="attribute">
+              <label for="features-checkbox-2">Блок преимуществ</label><br>
+          <input type="checkbox" id="features-checkbox-3" name="attribute">
+              <label for="features-checkbox-3">Новости</label><br>
+          <input type="checkbox" id="features-checkbox-4" name="attribute">
+              <label for="features-checkbox-4">Галерея</label><br>
+          <input type="checkbox" id="features-checkbox-5" name="attribute">
+              <label for="features-checkbox-5">Корзина</label>
        </fieldset>
       </div>
       <input class="button-show" type="submit" value="Показать">
@@ -175,17 +175,32 @@
    </div>
  </div>
 </main>
-<div class="communication">
-  <span class="communication-head"><b>NЁRDS DESIGN STUDIO</b></span><br>
-  <p>191186, Санкт-Петербург, <br>
-  ул. Б. Конюшенная, д. 9/8</p>
-  <span class="number">тел. +7(812)275-75-75</span>
-  <a class="button-write-us" href="#">Напишите нам</a>
-</div>
 <div class="map-app">
+  <div class="communication">
+    <span class="communication-head"><b>NЁRDS DESIGN STUDIO</b></span><br>
+    <p>191186, Санкт-Петербург, <br>
+    ул. Б. Конюшенная, д. 9/8</p>
+    <span class="number">тел. +7(812)275-75-75</span>
+    <a class="button-write-us" href="#">Напишите нам</a>
+  </div>
   <div class="container map-wrap">
    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9uSLLRkU7yz5ot2y6dyysRrsj2R7G9Mk&width=880&amp;height=416&lang=ru_RU&sourceType=constructor&scroll=true"></script>
 </div>
+</div>
+<div class="modal-content">
+  <button class="modal-content-close" type="button" name="button"></button>
+  <form action="/echo" method="post">
+    <div class="input-field-name">
+     <label>Ваше имя: </label><br>
+     <input type="text" name="name" value="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
+    </div>
+    <div class="input-field-email">
+     <label>Ваш e-mail: </label><br>
+     <input type="text" name="e-mail" value="ДЛЯ ОТПРАВКИ ОТВЕТА">
+    </div>
+     <label class="textarea-text"> Текст письма: <br><textarea class="textarea-letter">В СВОБОДНОЙ ФОРМЕ</textarea></label>
+     <input class="button-send" type="submit" value="ОТПРАВИТЬ">
+  </form>
 </div>
    <footer class="main-footer">
     <div class="container">
@@ -205,7 +220,7 @@
             var popup = document.querySelector(".modal-content");
             var close = document.querySelector(".modal-content-close");
             var authorize = popup.querySelector("[name=name]");
-            var form = popup.querySelector(".form")
+            var form = popup.querySelector("form")
 
             button.addEventListener("click", function(event) {
               event.preventDefault()
@@ -224,6 +239,11 @@
                        popup.classList.remove("modal-content-show");
                      }
                    }
-                 });</script>
+                 });
+            form.addEventListener("submit", function(event) {
+              event.preventDefault()
+              console.log("отправляем форму");
+            });
+   </script>
  </body>
 </html>

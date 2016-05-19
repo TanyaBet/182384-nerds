@@ -15,23 +15,23 @@
             <img src="img/index-logo.png" width="139" height="56" alt="Нёрдс">
           </div>
           <nav class="main-navigation">
-           <ul class="main-menu nowrap">
-             <li class="top-menu-link">
-              <span class="active">студия</span>
-             </li>
-              <li class="top-menu-link">
-                <a href="#">клиенты</a>
-             </li>
-              <li class="top-menu-link">
-                <a href="catalog.html">магазин</a>
-             </li>
-              <li class="top-menu-link">
-                <a href="#">контакты</a>
-             </li>
-             <li class="top-menu-link menu-basket-link">
-               <a class="icon-basket" href="#">Корзина</a>
-             </li>
-           </ul>
+            <ul class="main-menu nowrap">
+                <li class="top-menu-link">
+                  <span class="active studio">Студия</span>
+                </li>
+                <li class="top-menu-link">
+                  <a href="#">Клиенты</a>
+                </li>
+                <li class="top-menu-link">
+                  <a href="catalog.html">Магазин</a>
+                </li>
+                <li class="top-menu-link">
+                  <a href="#">Контакты</a>
+                </li>
+                <li class="top-menu-link">
+                  <span class="icon-basket"></span><a href="#">Корзина</a>
+                </li>
+             </ul>
           </nav>
         </div>
     </header>
@@ -48,23 +48,23 @@
           </div>
           <div class="slides">
                     <div class="slide">
-                      <div class="slide-text">
-                        <div class="slide-title">Долго, дорого, скрупулезно</div>
+                      <div class="slide-text slide-text-left">
+                        <div class="slide-title slide-title-left">Долго, дорого, скрупулезно</div>
                         <p>Математически выверенный дизайн<br>
                          для вашего сайта или мобильного приложения.</p>
                         <a class="slide-button slide-button-left" href="#">Узнать больше</a>
                       </div>
                     </div>
                     <div class="slide">
-                      <div class="slide-text">
-                        <div class="slide-title">Любите ли вы математику,<br> как любим ее мы?</div>
+                      <div class="slide-text slide-text-middle">
+                        <div class="slide-title slide-title-middle">Любите ли вы математику,<br> как любим ее мы?</div>
                         <p>Нашим дизайнерам мы удаляем нейроны, ответственные за креатив, чтобы дать им возможность все просчитать.</p>
                         <a class="slide-button slide-button-middle" href="#">Узнать больше</a>
                       </div>
                     </div>
                     <div class="slide">
-                      <div class="slide-text">
-                        <div class="slide-title">Только наркотики, только хардкор!</div>
+                      <div class="slide-text slide-text-right">
+                        <div class="slide-title slide-title-right">Только наркотики, только хардкор!</div>
                         <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов</p>
                         <a class="slide-button slide-button-right" href="#">Узнать больше</a>
                       </div>
@@ -133,20 +133,20 @@
           </div>
         </div>
     </main>
-   <div class="communication">
-     <span class="communication-head"><b>NЁRDS DESIGN STUDIO</b></span><br>
-     <p>191186, Санкт-Петербург, <br>
-     ул. Б. Конюшенная, д. 9/8</p>
-     <span class="number">тел. +7(812)275-75-75</span>
-     <a class="button-write-us" href="#">Напишите нам</a>
-   </div>
    <div class="map-app">
+     <div class="communication">
+       <span class="communication-head"><b>NЁRDS DESIGN STUDIO</b></span><br>
+       <p>191186, Санкт-Петербург, <br>
+       ул. Б. Конюшенная, д. 9/8</p>
+       <span class="number">тел. +7(812)275-75-75</span>
+       <a class="button-write-us" href="#">Напишите нам</a>
+     </div>
      <div class="container map-wrap">
       <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=9uSLLRkU7yz5ot2y6dyysRrsj2R7G9Mk&width=880&amp;height=416&lang=ru_RU&sourceType=constructor&scroll=true"></script>
    </div>
     <div class="modal-content">
       <button class="modal-content-close" type="button" name="button"></button>
-      <form action="#" method="post">
+      <form action="/echo" method="post">
         <div class="input-field-name">
          <label>Ваше имя: </label><br>
          <input type="text" name="name" value="ПРЕДСТАВЬТЕСЬ, ПОЖАЛУЙСТА">
@@ -178,7 +178,8 @@
              var popup = document.querySelector(".modal-content");
              var close = document.querySelector(".modal-content-close");
              var authorize = popup.querySelector("[name=name]");
-             var form = popup.querySelector(".form")
+             var form = popup.querySelector("form")
+
 
              button.addEventListener("click", function(event) {
                event.preventDefault()
@@ -198,8 +199,6 @@
                       }
                     }
                   });
-
-
     </script>
   </body>
 </html>
